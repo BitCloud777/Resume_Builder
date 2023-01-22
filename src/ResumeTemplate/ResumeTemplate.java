@@ -108,7 +108,7 @@ public class ResumeTemplate
 	{
 //	      ---------------------------------------------------------------------------------------------------------
 	      String PDFname = First_Name+"_"+ Second_Name +"_Resume.pdf";										// Set Pdf Name
-	      String Srcpath = "E:/"+ PDFname;											//path where the PDF will Save
+	      String Srcpath = "C:/Users/Terrence/Music/"+ PDFname;											//path where the PDF will Save
 	      PdfWriter pdfwriter = new PdfWriter(Srcpath);
 	      PdfDocument pdfDocument = new PdfDocument(pdfwriter);
 	      Document document = new Document(pdfDocument);
@@ -120,8 +120,8 @@ public class ResumeTemplate
 	      
 	      
 //	      ------------------------ TEXT STYLE Start--------------------------------
-	      com.itextpdf.kernel.color.Color Primiry_color = new DeviceRgb(47,79,79);
-	      com.itextpdf.kernel.color.Color Secondy_color = new DeviceRgb(0,128,128);
+	      com.itextpdf.kernel.color.Color Primiry_color = new DeviceRgb(1, 16, 60);
+	      com.itextpdf.kernel.color.Color Secondy_color = new DeviceRgb(0, 0, 0);
 	      
 	      
 	      //MainHeading
@@ -157,7 +157,7 @@ public class ResumeTemplate
 	      
 	      Text Address_Head = new Text("Street Address") .addStyle(MainText);;
 	      Text Address1 = new Text("\n" + Address+ ","+ City) .addStyle(MainText);;
-	      Text Phone = new Text("\n" + "+91"+Phone_Number) .addStyle(MainText);;
+	      Text Phone = new Text("\n" + "+63 "+Phone_Number) .addStyle(MainText);;
 	      
 	      Address_Para.add(Address_Head)
 	      			  .add(Address1)
@@ -190,7 +190,7 @@ public class ResumeTemplate
 	      float columnWidth[] = {200f, 200f,200f, 200f};
 		     Table table = new Table(columnWidth);
 		     table.setPaddingTop(7f);
-		     table.setBorder(new SolidBorder(Color.WHITE,1));
+		     table.setBorder(new SolidBorder(Color.BLACK,1));
 	     
 	      
 	     Paragraph Accounts = new Paragraph()

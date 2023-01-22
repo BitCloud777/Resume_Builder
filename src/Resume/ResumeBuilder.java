@@ -130,6 +130,7 @@ public class ResumeBuilder {
 //		============================================================================================================
 		
 		PresonalD_Page = new JPanel();							
+		PresonalD_Page.setBackground(new Color(0, 128, 192));
 		frame.getContentPane().add(PresonalD_Page, "p1");
 		PresonalD_Page.setBorder(new LineBorder(new Color(192, 192, 192), 2, true));
 		PresonalD_Page.setBounds(29, 11, 809, 445);
@@ -137,39 +138,44 @@ public class ResumeBuilder {
 		PresonalD_Page.setLayout(null);
 		
 		JPanel PreDContainer = new JPanel();
+		PreDContainer.setBackground(new Color(128, 128, 128));
 		PreDContainer.setBorder(new LineBorder(new Color(192, 192, 192), 2, true));
 		PreDContainer.setBounds(34, 23, 789, 39);
 		PresonalD_Page.add(PreDContainer);
 		
-		JLabel PresonalDetails = new JLabel("Presonal Details");
-		PresonalDetails.setFont(new Font("Yu Gothic UI Semilight", Font.BOLD, 22));
-		PreDContainer.add(PresonalDetails);
+		JLabel PresonalInformation = new JLabel("Personal Information");
+		PresonalInformation.setForeground(new Color(255, 255, 255));
+		PresonalInformation.setBackground(new Color(255, 255, 255));
+		PresonalInformation.setFont(new Font("Tw Cen MT Condensed Extra Bold", Font.BOLD, 22));
+		PreDContainer.add(PresonalInformation);
 		
-		JLabel First_Name_Label = new JLabel("First Name*");
-		First_Name_Label.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		JLabel First_Name_Label = new JLabel("First Name");
+		First_Name_Label.setForeground(new Color(255, 255, 255));
+		First_Name_Label.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		First_Name_Label.setBounds(93, 83, 82, 21);
 		PresonalD_Page.add(First_Name_Label);
 		
 		JTextField First_Name = new JTextField();
 		First_Name.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
 		First_Name.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		First_Name.setBackground(new Color(240, 240, 240));
+		First_Name.setBackground(new Color(192, 192, 192));
 		First_Name.setForeground(new Color(25, 25, 112));
 		First_Name.setBounds(93, 109, 262, 29);
 		PresonalD_Page.add(First_Name);
-		First_Name.setColumns(10);
+		First_Name.setColumns(25);
 		
 		JTextField Second_Name = new JTextField();
 		Second_Name.setColumns(10);
 		Second_Name.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
 		Second_Name.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		Second_Name.setBackground(new Color(240, 240, 240));
+		Second_Name.setBackground(new Color(192, 192, 192));
 		Second_Name.setForeground(new Color(25, 25, 112));
 		Second_Name.setBounds(460, 109, 262, 29);
 		PresonalD_Page.add(Second_Name);
 		
-		JLabel Second_Name_label = new JLabel("Second Name*");
-		Second_Name_label.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		JLabel Second_Name_label = new JLabel("Second Name");
+		Second_Name_label.setForeground(new Color(255, 255, 255));
+		Second_Name_label.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		Second_Name_label.setBounds(460, 83, 116, 21);
 		PresonalD_Page.add(Second_Name_label);
 		
@@ -178,14 +184,14 @@ public class ResumeBuilder {
 		Email.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
 		Email.setColumns(10);
 		Email.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		Email.setBackground(UIManager.getColor("Button.background"));
+		Email.setBackground(new Color(192, 192, 192));
 		Email.setBounds(93, 175, 234, 29);
 		PresonalD_Page.add(Email);
 		
 		
-		JLabel Email_Label = new JLabel("Email*");
-		Email_Label.setForeground(Color.BLACK);
-		Email_Label.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		JLabel Email_Label = new JLabel("Email");
+		Email_Label.setForeground(new Color(255, 255, 255));
+		Email_Label.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		Email_Label.setBounds(93, 150, 82, 21);
 		PresonalD_Page.add(Email_Label);
 		
@@ -194,12 +200,13 @@ public class ResumeBuilder {
 		LinkedIn.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
 		LinkedIn.setColumns(10);
 		LinkedIn.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		LinkedIn.setBackground(UIManager.getColor("Button.background"));
+		LinkedIn.setBackground(new Color(192, 192, 192));
 		LinkedIn.setBounds(93, 307, 234, 29);
 		PresonalD_Page.add(LinkedIn);
 		
-		JLabel LinkedIn_Label = new JLabel("Linked In*");
-		LinkedIn_Label.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		JLabel LinkedIn_Label = new JLabel("Linked In");
+		LinkedIn_Label.setForeground(new Color(255, 255, 255));
+		LinkedIn_Label.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		LinkedIn_Label.setBounds(93, 281, 82, 21);
 		PresonalD_Page.add(LinkedIn_Label);
 		
@@ -208,27 +215,29 @@ public class ResumeBuilder {
 		Address.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
 		Address.setColumns(10);
 		Address.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		Address.setBackground(UIManager.getColor("Button.background"));
+		Address.setBackground(new Color(192, 192, 192));
 		Address.setBounds(93, 241, 234, 29);
 		
 		PresonalD_Page.add(Address);
 		
-		JLabel Address_lable = new JLabel("Address*");
-		Address_lable.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		JLabel Address_lable = new JLabel("Address");
+		Address_lable.setForeground(new Color(255, 255, 255));
+		Address_lable.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		Address_lable.setBounds(93, 215, 95, 21);
 		PresonalD_Page.add(Address_lable);
 		
 		JTextField Facebook = new JTextField();
-		Facebook.setForeground(new Color(25, 25, 112));
+		Facebook.setForeground(new Color(192, 192, 192));
 		Facebook.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
 		Facebook.setColumns(10);
 		Facebook.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		Facebook.setBackground(UIManager.getColor("Button.background"));
+		Facebook.setBackground(new Color(192, 192, 192));
 		Facebook.setBounds(93, 373, 234, 29);
 		PresonalD_Page.add(Facebook);
 		
-		JLabel Facebook_Label = new JLabel("Facebook*");
-		Facebook_Label.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		JLabel Facebook_Label = new JLabel("Facebook");
+		Facebook_Label.setForeground(new Color(255, 255, 255));
+		Facebook_Label.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		Facebook_Label.setBounds(93, 347, 82, 21);
 		PresonalD_Page.add(Facebook_Label);
 		
@@ -237,17 +246,19 @@ public class ResumeBuilder {
 		Phone_Number.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
 		Phone_Number.setColumns(10);
 		Phone_Number.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		Phone_Number.setBackground(UIManager.getColor("Button.background"));
+		Phone_Number.setBackground(new Color(192, 192, 192));
 		Phone_Number.setBounds(460, 175, 234, 29);
 		PresonalD_Page.add(Phone_Number);
 		
-		JLabel Phone_Number_Label = new JLabel("Phone Number*");
-		Phone_Number_Label.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		JLabel Phone_Number_Label = new JLabel("Phone Number");
+		Phone_Number_Label.setForeground(new Color(255, 255, 255));
+		Phone_Number_Label.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		Phone_Number_Label.setBounds(460, 149, 116, 21);
 		PresonalD_Page.add(Phone_Number_Label);
 		
-		JLabel GitHub_Label = new JLabel("GitHub*");
-		GitHub_Label.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		JLabel GitHub_Label = new JLabel("GitHub");
+		GitHub_Label.setForeground(new Color(255, 255, 255));
+		GitHub_Label.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		GitHub_Label.setBounds(460, 347, 82, 21);
 		PresonalD_Page.add(GitHub_Label);
 		
@@ -256,12 +267,13 @@ public class ResumeBuilder {
 		GitHub.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
 		GitHub.setColumns(10);
 		GitHub.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		GitHub.setBackground(UIManager.getColor("Button.background"));
+		GitHub.setBackground(new Color(192, 192, 192));
 		GitHub.setBounds(460, 373, 234, 29);
 		PresonalD_Page.add(GitHub);
 		
-		JLabel Twitter_Label = new JLabel("Twitter*");
-		Twitter_Label.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		JLabel Twitter_Label = new JLabel("Twitter");
+		Twitter_Label.setForeground(new Color(255, 255, 255));
+		Twitter_Label.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		Twitter_Label.setBounds(460, 281, 51, 21);
 		PresonalD_Page.add(Twitter_Label);
 		
@@ -270,12 +282,13 @@ public class ResumeBuilder {
 		Twitter.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
 		Twitter.setColumns(10);
 		Twitter.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		Twitter.setBackground(UIManager.getColor("Button.background"));
+		Twitter.setBackground(new Color(192, 192, 192));
 		Twitter.setBounds(460, 307, 234, 29);
 		PresonalD_Page.add(Twitter);
 		
-		JLabel City_Label = new JLabel("City*");
-		City_Label.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		JLabel City_Label = new JLabel("City");
+		City_Label.setForeground(new Color(255, 255, 255));
+		City_Label.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		City_Label.setBounds(460, 215, 82, 21);
 		PresonalD_Page.add(City_Label);
 		
@@ -284,18 +297,20 @@ public class ResumeBuilder {
 		City.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
 		City.setColumns(10);
 		City.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		City.setBackground(UIManager.getColor("Button.background"));
+		City.setBackground(new Color(192, 192, 192));
 		City.setBounds(460, 241, 234, 29);
 		PresonalD_Page.add(City);
 		
 		JButton Back_Btn_1 = new JButton("Back");
+		Back_Btn_1.setFont(new Font("Tw Cen MT", Font.PLAIN, 11));
 		Back_Btn_1.setBorder(new LineBorder(new Color(240, 240, 240), 3, false));
-		Back_Btn_1.setForeground(new Color(245, 245, 245));
-		Back_Btn_1.setBackground(new Color(128, 128, 128));
+		Back_Btn_1.setForeground(new Color(0, 0, 0));
+		Back_Btn_1.setBackground(new Color(255, 255, 255));
 		Back_Btn_1.setBounds(265, 413, 82, 29);
 		PresonalD_Page.add(Back_Btn_1);
 		
 		JButton Next_Btn_1 = new JButton("Next");
+		Next_Btn_1.setFont(new Font("Tw Cen MT", Font.PLAIN, 11));
 		Next_Btn_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -306,9 +321,9 @@ public class ResumeBuilder {
 			}
 		});
 		
-		Next_Btn_1.setForeground(new Color(245, 245, 245));
+		Next_Btn_1.setForeground(new Color(0, 0, 0));
 		Next_Btn_1.setBorder(new LineBorder(new Color(240, 240, 240), 3, false));
-		Next_Btn_1.setBackground(new Color(0, 0, 128));
+		Next_Btn_1.setBackground(new Color(255, 255, 255));
 		Next_Btn_1.setBounds(470, 413, 82, 29);
 		PresonalD_Page.add(Next_Btn_1);
 		
@@ -358,7 +373,7 @@ public class ResumeBuilder {
 			PresonalD_Page.add(iconinsta);
 //			5.
 			JLabel iconwebsite = new JLabel();
-			iconwebsite.setBounds(695, 243, 27, 27);
+			iconwebsite.setBounds(470, 73, 185, 223);
 			BufferedImage Img1111 = null;
 			Img1111 = ImageIO.read(new File("Resume Builder Assets\\home2.png"));
 			Image icon1111 = Img1111.getScaledInstance(iconwebsite.getWidth(), iconwebsite.getHeight(), Image.SCALE_SMOOTH);
@@ -393,6 +408,11 @@ public class ResumeBuilder {
 			icongithub.setIcon(format4);
 			PresonalD_Page.add(icongithub);
 			
+			JLabel lblNewLabel = new JLabel("");
+			lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Terrence\\Music\\437956.jpg"));
+			lblNewLabel.setBounds(0, 0, 861, 464);
+			PresonalD_Page.add(lblNewLabel);
+			
 		}
 		catch(Exception e)
 		{
@@ -414,32 +434,37 @@ public class ResumeBuilder {
 		EducationD_Page.setLayout(null);
 		
 		JPanel EduContainer = new JPanel();
+		EduContainer.setForeground(new Color(255, 255, 255));
+		EduContainer.setBackground(new Color(128, 128, 128));
 		EduContainer.setBounds(34, 23, 789, 39);
 		EduContainer.setBorder(new LineBorder(new Color(192, 192, 192), 2, true));
 		EducationD_Page.add(EduContainer);
 		
 		JLabel EducationDetails = new JLabel("Education Details");
-		EducationDetails.setFont(new Font("Yu Gothic UI Semilight", Font.BOLD, 22));
+		EducationDetails.setForeground(new Color(255, 255, 255));
+		EducationDetails.setFont(new Font("Tw Cen MT Condensed Extra Bold", Font.BOLD, 22));
 		EduContainer.add(EducationDetails);
 		
-		JLabel Form_Year_Label = new JLabel("From Year*");
+		JLabel Form_Year_Label = new JLabel("From Year");
+		Form_Year_Label.setForeground(new Color(255, 255, 255));
 		Form_Year_Label.setBounds(396, 89, 74, 20);
-		Form_Year_Label.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		Form_Year_Label.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		
 		
 		EducationD_Page.add(Form_Year_Label);
 		
 		College_Univercity = new JTextField();
 		College_Univercity.setBounds(57, 115, 281, 27);
-		College_Univercity.setForeground(new Color(25, 25, 112));
+		College_Univercity.setForeground(new Color(192, 192, 192));
 		College_Univercity.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
 		College_Univercity.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		College_Univercity.setBackground(UIManager.getColor("Button.background"));
+		College_Univercity.setBackground(new Color(192, 192, 192));
 		EducationD_Page.add(College_Univercity);
 		College_Univercity.setColumns(10);
 		
-		JLabel College_Univercity_label_1 = new JLabel("College/Univercity*");
-		College_Univercity_label_1.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		JLabel College_Univercity_label_1 = new JLabel("College/Univercity");
+		College_Univercity_label_1.setForeground(new Color(255, 255, 255));
+		College_Univercity_label_1.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		College_Univercity_label_1.setBounds(57, 89, 137, 20);
 		EducationD_Page.add(College_Univercity_label_1);
 		
@@ -448,7 +473,7 @@ public class ResumeBuilder {
 		FromYear1.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
 		FromYear1.setColumns(10);
 		FromYear1.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		FromYear1.setBackground(UIManager.getColor("Button.background"));
+		FromYear1.setBackground(new Color(192, 192, 192));
 		FromYear1.setBounds(396, 115, 156, 27);
 		EducationD_Page.add(FromYear1);
 		
@@ -457,12 +482,13 @@ public class ResumeBuilder {
 		ToYear1.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
 		ToYear1.setColumns(10);
 		ToYear1.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		ToYear1.setBackground(UIManager.getColor("Button.background"));
+		ToYear1.setBackground(new Color(192, 192, 192));
 		ToYear1.setBounds(623, 115, 156, 27);
 		EducationD_Page.add(ToYear1);
 		
-		JLabel To_Year_Label = new JLabel("To Year*");
-		To_Year_Label.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		JLabel To_Year_Label = new JLabel("To Year");
+		To_Year_Label.setForeground(new Color(255, 255, 255));
+		To_Year_Label.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		To_Year_Label.setBounds(623, 89, 74, 20);
 		EducationD_Page.add(To_Year_Label);
 		
@@ -471,17 +497,19 @@ public class ResumeBuilder {
 		ClgQualification.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
 		ClgQualification.setColumns(10);
 		ClgQualification.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		ClgQualification.setBackground(UIManager.getColor("Button.background"));
+		ClgQualification.setBackground(new Color(192, 192, 192));
 		ClgQualification.setBounds(57, 188, 231, 27);
 		EducationD_Page.add(ClgQualification);
 		
-		JLabel Qualification_Label_1 = new JLabel("Qualification*");
-		Qualification_Label_1.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		JLabel Qualification_Label_1 = new JLabel("Qualification");
+		Qualification_Label_1.setForeground(new Color(255, 255, 255));
+		Qualification_Label_1.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		Qualification_Label_1.setBounds(57, 162, 100, 20);
 		EducationD_Page.add(Qualification_Label_1);
 		
-		JLabel Description_Label_1 = new JLabel("Description*");
-		Description_Label_1.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		JLabel Description_Label_1 = new JLabel("Description");
+		Description_Label_1.setForeground(new Color(255, 255, 255));
+		Description_Label_1.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		Description_Label_1.setBounds(351, 162, 119, 20);
 		EducationD_Page.add(Description_Label_1);
 		
@@ -489,7 +517,7 @@ public class ResumeBuilder {
 		ClgDescription.setForeground(new Color(25, 25, 112));
 		ClgDescription.setFont(new Font("Trebuchet MS", Font.PLAIN, 13));
 		ClgDescription.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		ClgDescription.setBackground(UIManager.getColor("Button.background"));
+		ClgDescription.setBackground(new Color(192, 192, 192));
 		ClgDescription.setBounds(351, 187, 455, 28);
 		EducationD_Page.add(ClgDescription);
 		
@@ -504,12 +532,13 @@ public class ResumeBuilder {
 		FromYear2.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
 		FromYear2.setColumns(10);
 		FromYear2.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		FromYear2.setBackground(UIManager.getColor("Button.background"));
+		FromYear2.setBackground(new Color(192, 192, 192));
 		FromYear2.setBounds(396, 279, 156, 27);
 		EducationD_Page.add(FromYear2);
 		
-		JLabel Form_Year_Label_1 = new JLabel("From Year*");
-		Form_Year_Label_1.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		JLabel Form_Year_Label_1 = new JLabel("From Year");
+		Form_Year_Label_1.setForeground(new Color(255, 255, 255));
+		Form_Year_Label_1.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		Form_Year_Label_1.setBounds(396, 253, 74, 20);
 		EducationD_Page.add(Form_Year_Label_1);
 		
@@ -518,12 +547,13 @@ public class ResumeBuilder {
 		ToYear2.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
 		ToYear2.setColumns(10);
 		ToYear2.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		ToYear2.setBackground(UIManager.getColor("Button.background"));
+		ToYear2.setBackground(new Color(192, 192, 192));
 		ToYear2.setBounds(623, 279, 156, 27);
 		EducationD_Page.add(ToYear2);
 		
-		JLabel To_Year_Label_1 = new JLabel("To Year*");
-		To_Year_Label_1.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		JLabel To_Year_Label_1 = new JLabel("To Year");
+		To_Year_Label_1.setForeground(new Color(255, 255, 255));
+		To_Year_Label_1.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		To_Year_Label_1.setBounds(623, 253, 74, 20);
 		EducationD_Page.add(To_Year_Label_1);
 		
@@ -532,12 +562,13 @@ public class ResumeBuilder {
 		SclDescription.setFont(new Font("Trebuchet MS", Font.PLAIN, 13));
 //		SclDescription.setColumns(10);
 		SclDescription.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		SclDescription.setBackground(UIManager.getColor("Button.background"));
+		SclDescription.setBackground(new Color(192, 192, 192));
 		SclDescription.setBounds(341, 351, 465, 27);
 		EducationD_Page.add(SclDescription);
 		
-		JLabel Description_Label_2 = new JLabel("Description*");
-		Description_Label_2.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		JLabel Description_Label_2 = new JLabel("Description");
+		Description_Label_2.setForeground(new Color(255, 255, 255));
+		Description_Label_2.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		Description_Label_2.setBounds(341, 325, 100, 20);
 		EducationD_Page.add(Description_Label_2);
 		
@@ -545,31 +576,34 @@ public class ResumeBuilder {
 		School.setForeground(new Color(25, 25, 112));
 		School.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
 		School.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		School.setBackground(UIManager.getColor("Button.background"));
+		School.setBackground(new Color(192, 192, 192));
 		School.setBounds(57, 279, 281, 27);
 		EducationD_Page.add(School);
 		
-		JLabel School_Label = new JLabel("School*");
-		School_Label.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		JLabel School_Label = new JLabel("School");
+		School_Label.setForeground(new Color(255, 255, 255));
+		School_Label.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		School_Label.setBounds(57, 253, 67, 20);
 		EducationD_Page.add(School_Label);
 		
-		JLabel Qualification_Label_2 = new JLabel("Qualification*");
-		Qualification_Label_2.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		JLabel Qualification_Label_2 = new JLabel("Qualification");
+		Qualification_Label_2.setForeground(new Color(255, 255, 255));
+		Qualification_Label_2.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		Qualification_Label_2.setBounds(57, 325, 100, 20);
 		EducationD_Page.add(Qualification_Label_2);
 		
 		SclQualification = new JTextField();
-		SclQualification.setForeground(new Color(25, 25, 112));
+		SclQualification.setForeground(new Color(192, 192, 192));
 		SclQualification.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
 		SclQualification.setColumns(10);
 		SclQualification.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		SclQualification.setBackground(UIManager.getColor("Button.background"));
+		SclQualification.setBackground(new Color(192, 192, 192));
 		SclQualification.setBounds(57, 351, 231, 27);
 		EducationD_Page.add(SclQualification);
 		
 		
 		JButton Back_Btn_2 = new JButton("Back");
+		Back_Btn_2.setFont(new Font("Tw Cen MT", Font.PLAIN, 11));
 		Back_Btn_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -582,12 +616,13 @@ public class ResumeBuilder {
 		
 	
 		Back_Btn_2.setBorder(new LineBorder(new Color(240, 240, 240), 3, false));
-		Back_Btn_2.setForeground(new Color(245, 245, 245));
-		Back_Btn_2.setBackground(new Color(0, 0, 128));
+		Back_Btn_2.setForeground(new Color(0, 0, 0));
+		Back_Btn_2.setBackground(new Color(255, 255, 255));
 		Back_Btn_2.setBounds(265, 413, 82, 29);
 		EducationD_Page.add(Back_Btn_2);
 		
 		JButton Next_Btn_2 = new JButton("Next");
+		Next_Btn_2.setFont(new Font("Tw Cen MT", Font.PLAIN, 11));
 		Next_Btn_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -598,9 +633,9 @@ public class ResumeBuilder {
 			}
 		});
 		
-		Next_Btn_2.setForeground(new Color(245, 245, 245));
+		Next_Btn_2.setForeground(new Color(0, 0, 0));
 		Next_Btn_2.setBorder(new LineBorder(new Color(240, 240, 240), 3, false));
-		Next_Btn_2.setBackground(new Color(0, 0, 128));
+		Next_Btn_2.setBackground(new Color(255, 255, 255));
 		Next_Btn_2.setBounds(470, 413, 82, 29);
 		EducationD_Page.add(Next_Btn_2);
 
@@ -705,6 +740,11 @@ public class ResumeBuilder {
 			iconmail10.setIcon(format10);
 			EducationD_Page.add(iconmail10);
 			
+			JLabel lblNewLabel_1 = new JLabel("New label");
+			lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\Terrence\\Music\\437956.jpg"));
+			lblNewLabel_1.setBounds(0, 0, 861, 462);
+			EducationD_Page.add(lblNewLabel_1);
+			
 		}
 		catch(Exception e)
 		{
@@ -720,26 +760,32 @@ public class ResumeBuilder {
 		ProjectsD_Page.setLayout(null);
 		
 		JPanel ProDContainer = new JPanel();
+		ProDContainer.setBackground(new Color(128, 128, 128));
+		ProDContainer.setForeground(new Color(255, 255, 255));
 		ProDContainer.setBounds(34, 23, 789, 39);
 		ProDContainer.setBorder(new LineBorder(new Color(192, 192, 192), 2, true));
 		ProjectsD_Page.add(ProDContainer);
 		
 		JLabel ProjectDetails = new JLabel("Projects Details");
-		ProjectDetails.setFont(new Font("Yu Gothic UI Semilight", Font.BOLD, 22));
+		ProjectDetails.setForeground(new Color(255, 255, 255));
+		ProjectDetails.setFont(new Font("Tw Cen MT Condensed Extra Bold", Font.BOLD, 22));
 		ProDContainer.add(ProjectDetails);
 		
-		JLabel P_Title_Label_1 = new JLabel("Title* :");
+		JLabel P_Title_Label_1 = new JLabel("Title:");
+		P_Title_Label_1.setForeground(new Color(255, 255, 255));
 		P_Title_Label_1.setBounds(69, 115, 74, 20);
-		P_Title_Label_1.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		P_Title_Label_1.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		ProjectsD_Page.add(P_Title_Label_1);
 		
 		JLabel Project1 = new JLabel("Project 1");
-		Project1.setFont(new Font("Yu Gothic Medium", Font.PLAIN, 18));
+		Project1.setForeground(new Color(255, 255, 255));
+		Project1.setFont(new Font("Tw Cen MT", Font.PLAIN, 18));
 		Project1.setBounds(378, 69, 90, 28);
 		ProjectsD_Page.add(Project1);
 		
-		JLabel P_Link_Label_1 = new JLabel("Link* :");
-		P_Link_Label_1.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		JLabel P_Link_Label_1 = new JLabel("Link :");
+		P_Link_Label_1.setForeground(new Color(255, 255, 255));
+		P_Link_Label_1.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		P_Link_Label_1.setBounds(69, 155, 74, 20);
 		ProjectsD_Page.add(P_Link_Label_1);
 		
@@ -748,21 +794,22 @@ public class ResumeBuilder {
 		P_Link1.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
 		P_Link1.setColumns(10);
 		P_Link1.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		P_Link1.setBackground(UIManager.getColor("Button.background"));
+		P_Link1.setBackground(new Color(192, 192, 192));
 		P_Link1.setBounds(162, 148, 592, 27);
 		ProjectsD_Page.add(P_Link1);
 		
 		P_Title1 = new JTextField();
-		P_Title1.setForeground(new Color(25, 25, 112));
+		P_Title1.setForeground(new Color(192, 192, 192));
 		P_Title1.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
 		P_Title1.setColumns(10);
 		P_Title1.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		P_Title1.setBackground(UIManager.getColor("Button.background"));
+		P_Title1.setBackground(new Color(192, 192, 192));
 		P_Title1.setBounds(162, 109, 592, 27);
 		ProjectsD_Page.add(P_Title1);
 		
-		JLabel P_Description_Label_1 = new JLabel("Description* :");
-		P_Description_Label_1.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		JLabel P_Description_Label_1 = new JLabel("Description:");
+		P_Description_Label_1.setForeground(new Color(255, 255, 255));
+		P_Description_Label_1.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		P_Description_Label_1.setBounds(69, 196, 90, 20);
 		ProjectsD_Page.add(P_Description_Label_1);
 		
@@ -770,7 +817,7 @@ public class ResumeBuilder {
 		P_Description1.setBounds(162, 187, 592, 36);
 		P_Description1.setFont(new Font("Trebuchet MS", Font.PLAIN, 15));
 		P_Description1.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		P_Description1.setBackground(UIManager.getColor("Button.background"));
+		P_Description1.setBackground(new Color(192, 192, 192));
 		P_Description1.setForeground(new Color(25, 25, 112));
 		ProjectsD_Page.add(P_Description1);
 		
@@ -780,18 +827,21 @@ public class ResumeBuilder {
 		separator_1.setBounds(63, 235, 744, 7);
 		ProjectsD_Page.add(separator_1);
 		
-		JLabel P_Title_Label_2 = new JLabel("Title* :");
-		P_Title_Label_2.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		JLabel P_Title_Label_2 = new JLabel("Title:");
+		P_Title_Label_2.setForeground(new Color(255, 255, 255));
+		P_Title_Label_2.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		P_Title_Label_2.setBounds(69, 290, 74, 20);
 		ProjectsD_Page.add(P_Title_Label_2);
 		
 		JLabel lblNewLabel_4_1 = new JLabel("Project 2");
-		lblNewLabel_4_1.setFont(new Font("Yu Gothic Medium", Font.PLAIN, 18));
+		lblNewLabel_4_1.setForeground(new Color(255, 255, 255));
+		lblNewLabel_4_1.setFont(new Font("Tw Cen MT", Font.PLAIN, 18));
 		lblNewLabel_4_1.setBounds(378, 244, 92, 27);
 		ProjectsD_Page.add(lblNewLabel_4_1);
 		
-		JLabel P_Link_Label_2 = new JLabel("Link* :");
-		P_Link_Label_2.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		JLabel P_Link_Label_2 = new JLabel("Link:");
+		P_Link_Label_2.setForeground(new Color(255, 255, 255));
+		P_Link_Label_2.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		P_Link_Label_2.setBounds(69, 329, 74, 20);
 		ProjectsD_Page.add(P_Link_Label_2);
 		
@@ -800,7 +850,7 @@ public class ResumeBuilder {
 		P_Link2.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
 		P_Link2.setColumns(10);
 		P_Link2.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		P_Link2.setBackground(UIManager.getColor("Button.background"));
+		P_Link2.setBackground(new Color(192, 192, 192));
 		P_Link2.setBounds(162, 322, 592, 27);
 		ProjectsD_Page.add(P_Link2);
 		
@@ -809,12 +859,13 @@ public class ResumeBuilder {
 		P_Title2.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
 		P_Title2.setColumns(10);
 		P_Title2.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		P_Title2.setBackground(UIManager.getColor("Button.background"));
+		P_Title2.setBackground(new Color(192, 192, 192));
 		P_Title2.setBounds(162, 283, 592, 27);
 		ProjectsD_Page.add(P_Title2);
 		
-		JLabel P_Description_Label_2 = new JLabel("Description* :");
-		P_Description_Label_2.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		JLabel P_Description_Label_2 = new JLabel("Description:");
+		P_Description_Label_2.setForeground(new Color(255, 255, 255));
+		P_Description_Label_2.setFont(new Font("Tw Cen MT", Font.BOLD, 14));
 		P_Description_Label_2.setBounds(69, 372, 90, 20);
 		ProjectsD_Page.add(P_Description_Label_2);
 		
@@ -822,11 +873,12 @@ public class ResumeBuilder {
 		P_Description2.setForeground(new Color(25, 25, 112));
 		P_Description2.setFont(new Font("Trebuchet MS", Font.PLAIN, 15));
 		P_Description2.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		P_Description2.setBackground(UIManager.getColor("Button.background"));
+		P_Description2.setBackground(new Color(192, 192, 192));
 		P_Description2.setBounds(162, 363, 592, 38);
 		ProjectsD_Page.add(P_Description2);
 		
 		JButton Back_Btn_3 = new JButton("Back");
+		Back_Btn_3.setFont(new Font("Tw Cen MT", Font.PLAIN, 11));
 		Back_Btn_3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				CardLayout c = (CardLayout)(frame.getContentPane().getLayout());
@@ -834,12 +886,13 @@ public class ResumeBuilder {
 			}
 		});
 		Back_Btn_3.setBounds(265, 413, 82, 29);
-		Back_Btn_3.setBackground(new Color(0, 0, 128));
-		Back_Btn_3.setForeground(new Color(245, 245, 245));
+		Back_Btn_3.setBackground(new Color(255, 255, 255));
+		Back_Btn_3.setForeground(new Color(0, 0, 0));
 		Back_Btn_3.setBorder(new LineBorder(new Color(240, 240, 240), 3, false));
 		ProjectsD_Page.add(Back_Btn_3);
 		
 		JButton Next_btn_3 = new JButton("Next");
+		Next_btn_3.setFont(new Font("Tw Cen MT", Font.PLAIN, 11));
 		Next_btn_3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				CardLayout c = (CardLayout)(frame.getContentPane().getLayout());
@@ -847,9 +900,9 @@ public class ResumeBuilder {
 			}
 		});
 		Next_btn_3.setBounds(470, 413, 82, 29);
-		Next_btn_3.setBackground(new Color(0, 0, 128));
+		Next_btn_3.setBackground(new Color(255, 255, 255));
 		Next_btn_3.setBorder(new LineBorder(new Color(240, 240, 240), 3, false));
-		Next_btn_3.setForeground(new Color(245, 245, 245));
+		Next_btn_3.setForeground(new Color(0, 0, 0));
 		ProjectsD_Page.add(Next_btn_3);
 		
 		JLabel PageNo3 = new JLabel("3/5");
@@ -914,6 +967,11 @@ public class ResumeBuilder {
 			ImageIcon format6 = new ImageIcon(icon6);
 			iconmail6.setIcon(format6);
 			ProjectsD_Page.add(iconmail6);
+			
+			JLabel lblNewLabel_2 = new JLabel("New label");
+			lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\Terrence\\Music\\437956.jpg"));
+			lblNewLabel_2.setBounds(0, 0, 861, 462);
+			ProjectsD_Page.add(lblNewLabel_2);
 		}
 		catch(Exception e)
 		{
@@ -929,24 +987,31 @@ public class ResumeBuilder {
 		ExperienceD_Page.setLayout(null);
 		
 		JPanel ExpContainers = new JPanel();
+		ExpContainers.setForeground(new Color(255, 255, 255));
+		ExpContainers.setBackground(new Color(128, 128, 128));
 		ExpContainers.setBounds(34, 23, 789, 39);
 		ExpContainers.setBorder(new LineBorder(new Color(192, 192, 192), 2, true));
 		ExperienceD_Page.add(ExpContainers);
 		
+		JLabel lblNewLabel_3 = new JLabel("");
+		ExpContainers.add(lblNewLabel_3);
+		
 		JLabel ExperienceDetails = new JLabel("Experience Details");
-		ExperienceDetails.setFont(new Font("Yu Gothic UI Semilight", Font.BOLD, 22));
+		ExperienceDetails.setForeground(new Color(255, 255, 255));
+		ExperienceDetails.setFont(new Font("Tw Cen MT Condensed Extra Bold", Font.BOLD, 22));
 		ExpContainers.add(ExperienceDetails);
 		
-		JLabel Institute_Lanel_1 = new JLabel("Institute/Origination*");
+		JLabel Institute_Lanel_1 = new JLabel("Institute/Origination");
+		Institute_Lanel_1.setForeground(new Color(255, 255, 255));
 		Institute_Lanel_1.setBounds(56, 88, 134, 16);
-		Institute_Lanel_1.setFont(new Font("Yu Gothic UI", Font.PLAIN, 14));
+		Institute_Lanel_1.setFont(new Font("Tw Cen MT", Font.PLAIN, 14));
 		ExperienceD_Page.add(Institute_Lanel_1);
 		
 		InstituteOrigination1 = new JTextField();
 		InstituteOrigination1.setForeground(new Color(25, 25, 112));
 		InstituteOrigination1.setFont(new Font("Trebuchet MS", Font.PLAIN, 15));
 		InstituteOrigination1.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		InstituteOrigination1.setBackground(UIManager.getColor("Button.background"));
+		InstituteOrigination1.setBackground(new Color(192, 192, 192));
 		InstituteOrigination1.setBounds(56, 116, 207, 25);
 		ExperienceD_Page.add(InstituteOrigination1);
 		InstituteOrigination1.setColumns(10);
@@ -956,11 +1021,12 @@ public class ResumeBuilder {
 		Position1.setFont(new Font("Trebuchet MS", Font.PLAIN, 15));
 		Position1.setColumns(10);
 		Position1.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		Position1.setBackground(UIManager.getColor("Button.background"));
+		Position1.setBackground(new Color(192, 192, 192));
 		Position1.setBounds(313, 116, 207, 25);
 		ExperienceD_Page.add(Position1);
 		
-		JLabel Position_Label_1 = new JLabel("Position*");
+		JLabel Position_Label_1 = new JLabel("Position");
+		Position_Label_1.setForeground(new Color(255, 255, 255));
 		Position_Label_1.setFont(new Font("Yu Gothic UI", Font.PLAIN, 14));
 		Position_Label_1.setBounds(313, 88, 68, 16);
 		ExperienceD_Page.add(Position_Label_1);
@@ -970,25 +1036,27 @@ public class ResumeBuilder {
 		Duration1.setFont(new Font("Trebuchet MS", Font.PLAIN, 15));
 		Duration1.setColumns(10);
 		Duration1.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		Duration1.setBackground(UIManager.getColor("Button.background"));
+		Duration1.setBackground(new Color(192, 192, 192));
 		Duration1.setBounds(572, 116, 201, 25);
 		ExperienceD_Page.add(Duration1);
 		
-		JLabel Duration_Label_1 = new JLabel("Duration*");
-		Duration_Label_1.setFont(new Font("Yu Gothic UI", Font.PLAIN, 14));
+		JLabel Duration_Label_1 = new JLabel("Duration");
+		Duration_Label_1.setForeground(new Color(255, 255, 255));
+		Duration_Label_1.setFont(new Font("Tw Cen MT", Font.PLAIN, 14));
 		Duration_Label_1.setBounds(572, 88, 68, 16);
 		ExperienceD_Page.add(Duration_Label_1);
 		
 		JTextPane ExpDescription1 = new JTextPane();
 		ExpDescription1.setBounds(56, 176, 717, 30);
-		ExpDescription1.setBackground(UIManager.getColor("Button.background"));
+		ExpDescription1.setBackground(new Color(192, 192, 192));
 		ExpDescription1.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
 		ExpDescription1.setFont(new Font("Trebuchet MS", Font.PLAIN, 13));
 		ExpDescription1.setForeground(new Color(25, 25, 112));
 		ExperienceD_Page.add(ExpDescription1);
 		
-		JLabel Exp_Description_Label_1 = new JLabel("Description*");
-		Exp_Description_Label_1.setFont(new Font("Yu Gothic UI", Font.PLAIN, 14));
+		JLabel Exp_Description_Label_1 = new JLabel("Description");
+		Exp_Description_Label_1.setForeground(new Color(255, 255, 255));
+		Exp_Description_Label_1.setFont(new Font("Tw Cen MT", Font.PLAIN, 14));
 		Exp_Description_Label_1.setBounds(56, 148, 79, 16);
 		ExperienceD_Page.add(Exp_Description_Label_1);
 		
@@ -998,18 +1066,21 @@ public class ResumeBuilder {
 		separator_2.setBounds(56, 226, 746, 9);
 		ExperienceD_Page.add(separator_2);
 		
-		JLabel Institute_Lanel_2 = new JLabel("Institute/Origination*");
-		Institute_Lanel_2.setFont(new Font("Yu Gothic UI", Font.PLAIN, 14));
+		JLabel Institute_Lanel_2 = new JLabel("Institute/Origination");
+		Institute_Lanel_2.setForeground(new Color(255, 255, 255));
+		Institute_Lanel_2.setFont(new Font("Tw Cen MT", Font.PLAIN, 14));
 		Institute_Lanel_2.setBounds(56, 256, 134, 16);
 		ExperienceD_Page.add(Institute_Lanel_2);
 		
-		JLabel Position_Label_2 = new JLabel("Position*");
-		Position_Label_2.setFont(new Font("Yu Gothic UI", Font.PLAIN, 14));
+		JLabel Position_Label_2 = new JLabel("Position");
+		Position_Label_2.setForeground(new Color(255, 255, 255));
+		Position_Label_2.setFont(new Font("Tw Cen MT", Font.PLAIN, 14));
 		Position_Label_2.setBounds(313, 256, 68, 16);
 		ExperienceD_Page.add(Position_Label_2);
 		
-		JLabel Duration_Label_2 = new JLabel("Duration*");
-		Duration_Label_2.setFont(new Font("Yu Gothic UI", Font.PLAIN, 14));
+		JLabel Duration_Label_2 = new JLabel("Duration");
+		Duration_Label_2.setForeground(new Color(255, 255, 255));
+		Duration_Label_2.setFont(new Font("Tw Cen MT", Font.PLAIN, 14));
 		Duration_Label_2.setBounds(572, 256, 68, 16);
 		ExperienceD_Page.add(Duration_Label_2);
 		
@@ -1018,7 +1089,7 @@ public class ResumeBuilder {
 		Duration2.setFont(new Font("Trebuchet MS", Font.PLAIN, 15));
 		Duration2.setColumns(10);
 		Duration2.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		Duration2.setBackground(UIManager.getColor("Button.background"));
+		Duration2.setBackground(new Color(192, 192, 192));
 		Duration2.setBounds(572, 284, 201, 25);
 		ExperienceD_Page.add(Duration2);
 		
@@ -1027,7 +1098,7 @@ public class ResumeBuilder {
 		Position2.setFont(new Font("Trebuchet MS", Font.PLAIN, 15));
 		Position2.setColumns(10);
 		Position2.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		Position2.setBackground(UIManager.getColor("Button.background"));
+		Position2.setBackground(new Color(192, 192, 192));
 		Position2.setBounds(313, 284, 207, 25);
 		ExperienceD_Page.add(Position2);
 		
@@ -1036,12 +1107,13 @@ public class ResumeBuilder {
 		InstituteOrigination2.setFont(new Font("Trebuchet MS", Font.PLAIN, 15));
 		InstituteOrigination2.setColumns(10);
 		InstituteOrigination2.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		InstituteOrigination2.setBackground(UIManager.getColor("Button.background"));
+		InstituteOrigination2.setBackground(new Color(192, 192, 192));
 		InstituteOrigination2.setBounds(56, 284, 207, 25);
 		ExperienceD_Page.add(InstituteOrigination2);
 		
-		JLabel Exp_Description_Label_2 = new JLabel("Description*");
-		Exp_Description_Label_2.setFont(new Font("Yu Gothic UI", Font.PLAIN, 14));
+		JLabel Exp_Description_Label_2 = new JLabel("Description");
+		Exp_Description_Label_2.setForeground(new Color(255, 255, 255));
+		Exp_Description_Label_2.setFont(new Font("Tw Cen MT", Font.PLAIN, 14));
 		Exp_Description_Label_2.setBounds(56, 316, 79, 16);
 		ExperienceD_Page.add(Exp_Description_Label_2);
 		
@@ -1049,12 +1121,13 @@ public class ResumeBuilder {
 		ExpDescription2.setForeground(new Color(25, 25, 112));
 		ExpDescription2.setFont(new Font("Trebuchet MS", Font.PLAIN, 13));
 		ExpDescription2.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		ExpDescription2.setBackground(UIManager.getColor("Button.background"));
+		ExpDescription2.setBackground(new Color(192, 192, 192));
 		ExpDescription2.setBounds(56, 344, 717, 28);
 		ExperienceD_Page.add(ExpDescription2);
 		
 
 		JButton Back_Btn_4 = new JButton("Back");
+		Back_Btn_4.setFont(new Font("Tw Cen MT", Font.PLAIN, 11));
 		Back_Btn_4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				CardLayout c = (CardLayout)(frame.getContentPane().getLayout());
@@ -1062,12 +1135,13 @@ public class ResumeBuilder {
 			}
 		});
 		Back_Btn_4.setBounds(265, 413, 82, 29);
-		Back_Btn_4.setBackground(new Color(0, 0, 128));
-		Back_Btn_4.setForeground(new Color(245, 245, 245));
+		Back_Btn_4.setBackground(new Color(255, 255, 255));
+		Back_Btn_4.setForeground(new Color(0, 0, 0));
 		Back_Btn_4.setBorder(new LineBorder(new Color(240, 240, 240), 3, false));
 		ExperienceD_Page.add(Back_Btn_4);
 		
 		JButton Next_btn_4 = new JButton("Next");
+		Next_btn_4.setFont(new Font("Tw Cen MT", Font.PLAIN, 11));
 		Next_btn_4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				CardLayout c = (CardLayout)(frame.getContentPane().getLayout());
@@ -1075,9 +1149,9 @@ public class ResumeBuilder {
 			}
 		});
 		Next_btn_4.setBounds(470, 413, 82, 29);
-		Next_btn_4.setBackground(new Color(0, 0, 128));
+		Next_btn_4.setBackground(new Color(255, 255, 255));
 		Next_btn_4.setBorder(new LineBorder(new Color(240, 240, 240), 3, false));
-		Next_btn_4.setForeground(new Color(245, 245, 245));
+		Next_btn_4.setForeground(new Color(0, 0, 0));
 		ExperienceD_Page.add(Next_btn_4);
 		
 		JLabel PageNo4 = new JLabel("4/5");
@@ -1161,6 +1235,11 @@ public class ResumeBuilder {
 			ImageIcon format8 = new ImageIcon(icon8);
 			iconmail8.setIcon(format8);
 			ExperienceD_Page.add(iconmail8);
+			
+			JLabel lblNewLabel_4 = new JLabel("New label");
+			lblNewLabel_4.setIcon(new ImageIcon("C:\\Users\\Terrence\\Music\\437956.jpg"));
+			lblNewLabel_4.setBounds(0, 0, 861, 462);
+			ExperienceD_Page.add(lblNewLabel_4);
 		}
 		catch(Exception e)
 		{
@@ -1175,49 +1254,59 @@ public class ResumeBuilder {
 		frame.getContentPane().add(ExtD_panel, "p5");
 		ExtD_panel.setLayout(null);
 		JPanel ExtDContainer = new JPanel();
+		ExtDContainer.setForeground(new Color(255, 255, 255));
+		ExtDContainer.setBackground(new Color(128, 128, 128));
 		ExtDContainer.setBounds(34, 23, 789, 39);
 		ExtDContainer.setBorder(new LineBorder(new Color(192, 192, 192), 2, true));
 		ExtD_panel.add(ExtDContainer);
 		
 		JLabel ExtraDetails = new JLabel("Extra Details");
-		ExtraDetails.setFont(new Font("Yu Gothic UI Semilight", Font.BOLD, 22));
+		ExtraDetails.setForeground(new Color(255, 255, 255));
+		ExtraDetails.setFont(new Font("Tw Cen MT Condensed Extra Bold", Font.BOLD, 22));
 		ExtDContainer.add(ExtraDetails);
 		
 		JLabel Skills_Label_1 = new JLabel("Skill 1");
+		Skills_Label_1.setForeground(new Color(255, 255, 255));
+		Skills_Label_1.setBackground(new Color(255, 255, 255));
 		Skills_Label_1.setBounds(44, 103, 50, 16);
-		Skills_Label_1.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		Skills_Label_1.setFont(new Font("Tw Cen MT", Font.PLAIN, 12));
 		ExtD_panel.add(Skills_Label_1);
 		
 		Skill1 = new JTextField();
-		Skill1.setForeground(new Color(25, 25, 112));
+		Skill1.setForeground(new Color(192, 192, 192));
 		Skill1.setFont(new Font("Trebuchet MS", Font.PLAIN, 15));
 		Skill1.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		Skill1.setBackground(UIManager.getColor("Button.background"));
+		Skill1.setBackground(new Color(192, 192, 192));
 		Skill1.setBounds(44, 121, 230, 21);
 		ExtD_panel.add(Skill1);
 		Skill1.setColumns(10);
 		
 		JLabel SkillsLanguage = new JLabel("Skills/Language");
+		SkillsLanguage.setBackground(new Color(255, 255, 255));
+		SkillsLanguage.setForeground(new Color(255, 255, 255));
 		SkillsLanguage.setBounds(61, 74, 149, 29);
-		SkillsLanguage.setFont(new Font("Yu Gothic Medium", Font.PLAIN, 18));
+		SkillsLanguage.setFont(new Font("Tw Cen MT", Font.PLAIN, 12));
 		ExtD_panel.add(SkillsLanguage);
 		
 		JLabel Skills_Label_2 = new JLabel("Skill 2");
-		Skills_Label_2.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		Skills_Label_2.setForeground(new Color(255, 255, 255));
+		Skills_Label_2.setBackground(new Color(255, 255, 255));
+		Skills_Label_2.setFont(new Font("Tw Cen MT", Font.PLAIN, 12));
 		Skills_Label_2.setBounds(306, 102, 50, 16);
 		ExtD_panel.add(Skills_Label_2);
 		
 		Skill2 = new JTextField();
-		Skill2.setForeground(new Color(25, 25, 112));
+		Skill2.setForeground(new Color(192, 192, 192));
 		Skill2.setFont(new Font("Trebuchet MS", Font.PLAIN, 15));
 		Skill2.setColumns(10);
 		Skill2.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		Skill2.setBackground(UIManager.getColor("Button.background"));
+		Skill2.setBackground(new Color(192, 192, 192));
 		Skill2.setBounds(306, 121, 230, 21);
 		ExtD_panel.add(Skill2);
 		
 		JLabel Skills_Label_3 = new JLabel("Skill 3");
-		Skills_Label_3.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		Skills_Label_3.setForeground(new Color(255, 255, 255));
+		Skills_Label_3.setFont(new Font("Tw Cen MT", Font.PLAIN, 12));
 		Skills_Label_3.setBounds(568, 102, 50, 16);
 		ExtD_panel.add(Skills_Label_3);
 		
@@ -1226,40 +1315,45 @@ public class ResumeBuilder {
 		Skill3.setFont(new Font("Trebuchet MS", Font.PLAIN, 15));
 		Skill3.setColumns(10);
 		Skill3.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		Skill3.setBackground(UIManager.getColor("Button.background"));
+		Skill3.setBackground(new Color(192, 192, 192));
 		Skill3.setBounds(568, 121, 230, 21);
 		ExtD_panel.add(Skill3);
 		
 		Skill5 = new JTextField();
-		Skill5.setForeground(new Color(25, 25, 112));
+		Skill5.setForeground(new Color(192, 192, 192));
 		Skill5.setFont(new Font("Trebuchet MS", Font.PLAIN, 15));
 		Skill5.setColumns(10);
 		Skill5.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		Skill5.setBackground(UIManager.getColor("Button.background"));
+		Skill5.setBackground(new Color(192, 192, 192));
 		Skill5.setBounds(306, 186, 230, 21);
 		ExtD_panel.add(Skill5);
 		
 		Skill4 = new JTextField();
-		Skill4.setForeground(new Color(25, 25, 112));
+		Skill4.setForeground(new Color(192, 192, 192));
 		Skill4.setFont(new Font("Trebuchet MS", Font.PLAIN, 15));
 		Skill4.setColumns(10);
 		Skill4.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		Skill4.setBackground(UIManager.getColor("Button.background"));
+		Skill4.setBackground(new Color(192, 192, 192));
 		Skill4.setBounds(44, 186, 230, 21);
 		ExtD_panel.add(Skill4);
 		
 		JLabel Skills_Label_4 = new JLabel("Skill 4");
-		Skills_Label_4.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		Skills_Label_4.setForeground(new Color(255, 255, 255));
+		Skills_Label_4.setBackground(new Color(255, 255, 255));
+		Skills_Label_4.setFont(new Font("Tw Cen MT", Font.PLAIN, 12));
 		Skills_Label_4.setBounds(44, 168, 50, 16);
 		ExtD_panel.add(Skills_Label_4);
 		
 		JLabel Skills_Label_5 = new JLabel("Skill 5");
-		Skills_Label_5.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		Skills_Label_5.setForeground(new Color(255, 255, 255));
+		Skills_Label_5.setBackground(new Color(255, 255, 255));
+		Skills_Label_5.setFont(new Font("Tw Cen MT", Font.PLAIN, 12));
 		Skills_Label_5.setBounds(306, 167, 50, 16);
 		ExtD_panel.add(Skills_Label_5);
 		
 		JLabel Skills_Label_6 = new JLabel("Skill 6");
-		Skills_Label_6.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		Skills_Label_6.setForeground(new Color(255, 255, 255));
+		Skills_Label_6.setFont(new Font("Tw Cen MT", Font.PLAIN, 12));
 		Skills_Label_6.setBounds(568, 167, 50, 16);
 		ExtD_panel.add(Skills_Label_6);
 		
@@ -1268,7 +1362,7 @@ public class ResumeBuilder {
 		Skill6.setFont(new Font("Trebuchet MS", Font.PLAIN, 15));
 		Skill6.setColumns(10);
 		Skill6.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		Skill6.setBackground(UIManager.getColor("Button.background"));
+		Skill6.setBackground(new Color(192, 192, 192));
 		Skill6.setBounds(568, 186, 230, 21);
 		ExtD_panel.add(Skill6);
 		
@@ -1279,58 +1373,66 @@ public class ResumeBuilder {
 		ExtD_panel.add(separator_3);
 		
 		Intrust1 = new JTextField();
-		Intrust1.setForeground(new Color(25, 25, 112));
+		Intrust1.setForeground(new Color(192, 192, 192));
 		Intrust1.setFont(new Font("Trebuchet MS", Font.PLAIN, 15));
 		Intrust1.setColumns(10);
 		Intrust1.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		Intrust1.setBackground(UIManager.getColor("Button.background"));
+		Intrust1.setBackground(new Color(192, 192, 192));
 		Intrust1.setBounds(44, 298, 230, 21);
 		ExtD_panel.add(Intrust1);
 		
 		JLabel Intrust_Label_1 = new JLabel("Intrust 1");
-		Intrust_Label_1.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		Intrust_Label_1.setForeground(new Color(255, 255, 255));
+		Intrust_Label_1.setBackground(new Color(255, 255, 255));
+		Intrust_Label_1.setFont(new Font("Tw Cen MT", Font.PLAIN, 12));
 		Intrust_Label_1.setBounds(44, 280, 65, 16);
 		ExtD_panel.add(Intrust_Label_1);
 		
 		JLabel Intrust_Label_4 = new JLabel("Intrust 4");
-		Intrust_Label_4.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		Intrust_Label_4.setForeground(new Color(255, 255, 255));
+		Intrust_Label_4.setBackground(new Color(255, 255, 255));
+		Intrust_Label_4.setFont(new Font("Tw Cen MT", Font.PLAIN, 12));
 		Intrust_Label_4.setBounds(44, 345, 65, 16);
 		ExtD_panel.add(Intrust_Label_4);
 		
 		Intrust4 = new JTextField();
-		Intrust4.setForeground(new Color(25, 25, 112));
+		Intrust4.setForeground(new Color(192, 192, 192));
 		Intrust4.setFont(new Font("Trebuchet MS", Font.PLAIN, 15));
 		Intrust4.setColumns(10);
 		Intrust4.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		Intrust4.setBackground(UIManager.getColor("Button.background"));
+		Intrust4.setBackground(new Color(192, 192, 192));
 		Intrust4.setBounds(44, 363, 230, 21);
 		ExtD_panel.add(Intrust4);
 		
 		Intrust5 = new JTextField();
-		Intrust5.setForeground(new Color(25, 25, 112));
+		Intrust5.setForeground(new Color(192, 192, 192));
 		Intrust5.setFont(new Font("Trebuchet MS", Font.PLAIN, 15));
 		Intrust5.setColumns(10);
 		Intrust5.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		Intrust5.setBackground(UIManager.getColor("Button.background"));
+		Intrust5.setBackground(new Color(192, 192, 192));
 		Intrust5.setBounds(306, 363, 230, 21);
 		ExtD_panel.add(Intrust5);
 		
 		JLabel Intrust_Label_5 = new JLabel("Intrust 5");
-		Intrust_Label_5.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		Intrust_Label_5.setForeground(new Color(255, 255, 255));
+		Intrust_Label_5.setBackground(new Color(255, 255, 255));
+		Intrust_Label_5.setFont(new Font("Tw Cen MT", Font.PLAIN, 12));
 		Intrust_Label_5.setBounds(306, 344, 65, 16);
 		ExtD_panel.add(Intrust_Label_5);
 		
 		JLabel Intrust_Label_2 = new JLabel("Intrust 2");
-		Intrust_Label_2.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		Intrust_Label_2.setForeground(new Color(255, 255, 255));
+		Intrust_Label_2.setBackground(new Color(255, 255, 255));
+		Intrust_Label_2.setFont(new Font("Tw Cen MT", Font.PLAIN, 12));
 		Intrust_Label_2.setBounds(306, 279, 65, 16);
 		ExtD_panel.add(Intrust_Label_2);
 		
 		Intrust2 = new JTextField();
-		Intrust2.setForeground(new Color(25, 25, 112));
+		Intrust2.setForeground(new Color(192, 192, 192));
 		Intrust2.setFont(new Font("Trebuchet MS", Font.PLAIN, 15));
 		Intrust2.setColumns(10);
 		Intrust2.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		Intrust2.setBackground(UIManager.getColor("Button.background"));
+		Intrust2.setBackground(new Color(192, 192, 192));
 		Intrust2.setBounds(306, 298, 230, 21);
 		ExtD_panel.add(Intrust2);
 		
@@ -1339,17 +1441,19 @@ public class ResumeBuilder {
 		Intrust3.setFont(new Font("Trebuchet MS", Font.PLAIN, 15));
 		Intrust3.setColumns(10);
 		Intrust3.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		Intrust3.setBackground(UIManager.getColor("Button.background"));
+		Intrust3.setBackground(new Color(192, 192, 192));
 		Intrust3.setBounds(568, 298, 230, 21);
 		ExtD_panel.add(Intrust3);
 		
 		JLabel Intrust_Label_3 = new JLabel("Intrust 3");
-		Intrust_Label_3.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		Intrust_Label_3.setForeground(new Color(255, 255, 255));
+		Intrust_Label_3.setFont(new Font("Tw Cen MT", Font.PLAIN, 12));
 		Intrust_Label_3.setBounds(568, 279, 65, 16);
 		ExtD_panel.add(Intrust_Label_3);
 		
 		JLabel Intrust_Label_6 = new JLabel("Intrust 6");
-		Intrust_Label_6.setFont(new Font("Yu Gothic UI", Font.BOLD, 14));
+		Intrust_Label_6.setForeground(new Color(255, 255, 255));
+		Intrust_Label_6.setFont(new Font("Tw Cen MT", Font.PLAIN, 12));
 		Intrust_Label_6.setBounds(568, 344, 65, 16);
 		ExtD_panel.add(Intrust_Label_6);
 		
@@ -1358,16 +1462,18 @@ public class ResumeBuilder {
 		Intrust6.setFont(new Font("Trebuchet MS", Font.PLAIN, 15));
 		Intrust6.setColumns(10);
 		Intrust6.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
-		Intrust6.setBackground(UIManager.getColor("Button.background"));
+		Intrust6.setBackground(new Color(192, 192, 192));
 		Intrust6.setBounds(568, 363, 230, 21);
 		ExtD_panel.add(Intrust6);
 		
 		JLabel lblNewLabel_8_1 = new JLabel("Intrust");
-		lblNewLabel_8_1.setFont(new Font("Yu Gothic Medium", Font.PLAIN, 18));
+		lblNewLabel_8_1.setBackground(new Color(255, 255, 255));
+		lblNewLabel_8_1.setFont(new Font("Tw Cen MT", Font.PLAIN, 12));
 		lblNewLabel_8_1.setBounds(61, 244, 65, 29);
 		ExtD_panel.add(lblNewLabel_8_1);
 		
 		JButton Back_btn_5 = new JButton("Back");
+		Back_btn_5.setFont(new Font("Tw Cen MT", Font.PLAIN, 11));
 		Back_btn_5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				CardLayout c = (CardLayout)(frame.getContentPane().getLayout());
@@ -1375,17 +1481,18 @@ public class ResumeBuilder {
 			}
 		});
 		Back_btn_5.setBounds(265, 413, 82, 29);
-		Back_btn_5.setBackground(new Color(0, 0, 128));
-		Back_btn_5.setForeground(new Color(245, 245, 245));
+		Back_btn_5.setBackground(new Color(255, 255, 255));
+		Back_btn_5.setForeground(new Color(0, 0, 0));
 		Back_btn_5.setBorder(new LineBorder(new Color(240, 240, 240), 3, false));
 		ExtD_panel.add(Back_btn_5);
 		
 		JButton Submit_btn = new JButton("Submit");
+		Submit_btn.setFont(new Font("Tw Cen MT", Font.PLAIN, 12));
 		
 		Submit_btn.setBounds(470, 413, 82, 29);
-		Submit_btn.setBackground(new Color(0, 128, 0));
+		Submit_btn.setBackground(new Color(255, 255, 255));
 		Submit_btn.setBorder(new LineBorder(new Color(240, 240, 240), 1, true));
-		Submit_btn.setForeground(new Color(245, 245, 245));
+		Submit_btn.setForeground(new Color(0, 0, 0));
 		ExtD_panel.add(Submit_btn);
 		
 		JLabel lblNewLabel_511 = new JLabel("5/5");
@@ -1393,6 +1500,13 @@ public class ResumeBuilder {
 		lblNewLabel_511.setFont(new Font("Yu Gothic UI Semibold", Font.PLAIN, 14));
 		lblNewLabel_511.setForeground(new Color(128, 128, 128));
 		ExtD_panel.add(lblNewLabel_511);
+		
+		JLabel lblNewLabel_5 = new JLabel("New label");
+		lblNewLabel_5.setFont(new Font("Tw Cen MT", Font.PLAIN, 12));
+		lblNewLabel_5.setBackground(new Color(255, 255, 255));
+		lblNewLabel_5.setIcon(new ImageIcon("C:\\Users\\Terrence\\Music\\437956.jpg"));
+		lblNewLabel_5.setBounds(0, 0, 861, 462);
+		ExtD_panel.add(lblNewLabel_5);
 
 //		============================================================================================================
 //		=========================================>>>> Final Page <<<<===============================================
@@ -1408,37 +1522,43 @@ public class ResumeBuilder {
 		Resume_Download_Page.add(user_full_name);
 		
 		JLabel user_email = new JLabel("EMAIL ADDRESS");
-		user_email.setForeground(new Color(0, 0, 128));
-		user_email.setFont(new Font("Dialog", Font.BOLD | Font.ITALIC, 14));
+		user_email.setForeground(new Color(255, 255, 255));
+		user_email.setFont(new Font("Tw Cen MT", Font.PLAIN, 12));
 		user_email.setBounds(213, 116, 251, 30);
 		Resume_Download_Page.add(user_email);
 		
 		JLabel user_phone = new JLabel("USER PHONE");
-		user_phone.setForeground(new Color(0, 0, 128));
-		user_phone.setFont(new Font("Dialog", Font.BOLD | Font.ITALIC, 14));
+		user_phone.setForeground(new Color(255, 255, 255));
+		user_phone.setFont(new Font("Tw Cen MT", Font.PLAIN, 12));
 		user_phone.setBounds(213, 154, 397, 30);
 		Resume_Download_Page.add(user_phone);
 		
 		JLabel user_address = new JLabel("ADDERSS");
-		user_address.setForeground(new Color(0, 0, 128));
-		user_address.setFont(new Font("Dialog", Font.BOLD | Font.ITALIC, 14));
+		user_address.setForeground(new Color(255, 255, 255));
+		user_address.setFont(new Font("Tw Cen MT", Font.PLAIN, 12));
 		user_address.setBounds(213, 203, 315, 30);
 		Resume_Download_Page.add(user_address);
 		
 		JLabel path = new JLabel("RESUME PATH");
-		path.setForeground(new Color(0, 191, 255));
-		path.setFont(new Font("Copperplate Gothic Light", Font.ITALIC, 12));
+		path.setForeground(new Color(255, 255, 255));
+		path.setFont(new Font("Tw Cen MT", Font.PLAIN, 12));
 		path.setBounds(245, 245, 417, 24);
 		Resume_Download_Page.add(path);
 		
 		JButton ViewButton = new JButton("VIEW");
 	
 		ViewButton.setBorder(new LineBorder(new Color(0, 0, 255)));
-		ViewButton.setBackground(new Color(30, 144, 255));
-		ViewButton.setForeground(Color.WHITE);
-		ViewButton.setFont(new Font("Malgun Gothic", Font.BOLD, 14));
+		ViewButton.setBackground(new Color(255, 255, 255));
+		ViewButton.setForeground(new Color(0, 0, 0));
+		ViewButton.setFont(new Font("Tw Cen MT", Font.PLAIN, 12));
 		ViewButton.setBounds(323, 298, 179, 26);
 		Resume_Download_Page.add(ViewButton);
+		
+		JLabel lblNewLabel_6 = new JLabel("");
+		lblNewLabel_6.setFont(new Font("Tw Cen MT", Font.PLAIN, 12));
+		lblNewLabel_6.setIcon(new ImageIcon("C:\\Users\\Terrence\\Music\\437956.jpg"));
+		lblNewLabel_6.setBounds(0, 0, 861, 464);
+		Resume_Download_Page.add(lblNewLabel_6);
 		
 		Submit_btn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
@@ -1519,16 +1639,16 @@ public class ResumeBuilder {
 //				--------------------------RESUME VIEW PAGE-------------------------------
 				user_full_name.setText(First_Name.getText()+" " + Second_Name.getText());
 				user_email.setText(Email.getText());
-				user_phone.setText("+91"+ Phone_Number.getText());
+				user_phone.setText("+63 "+ Phone_Number.getText());
 				user_address.setText(Address.getText() +","+City.getText());
-				String resumePtah = "E:/"+ First_Name.getText() +"_"+ Second_Name.getText() +"_Resume.pdf";
+				String resumePtah = "C:/Users/Terrence/Music/"+ First_Name.getText() +"_"+ Second_Name.getText() +"_Resume.pdf";
 				path.setText("PATH:  "+ resumePtah);
 //				-------------------------------------------------------------------------
 				
 				
 				System.out.println("--------------------------------------------------------------");
 				System.out.println("PDF SAVED");
-				System.out.println("PATH:"+"\n"+"\t \t" +"E:/"+ First_Name.getText() +"_"+ Second_Name.getText() +"_Resume.pdf");
+				System.out.println("PATH:"+"\n"+"\t \t" +"C:/Users/Terrence/Music/"+ First_Name.getText() +"_"+ Second_Name.getText() +"_Resume.pdf");
 				System.out.println("--------------------------------------------------------------");
 				System.out.println(FName + " " + SName);	//Temporary print all Values
 				System.out.println("Email: " + EmailId);
@@ -1625,7 +1745,7 @@ public class ResumeBuilder {
 				try  
 				{  
 				//constructor of file class having file as argument  
-				File file = new File("E://"+ First_Name.getText() +"_"+ Second_Name.getText() +"_Resume.pdf");   
+				File file = new File("C://Users//Terrence//Music/"+ First_Name.getText() +"_"+ Second_Name.getText() +"_Resume.pdf");   
 				if(!Desktop.isDesktopSupported())//check if Desktop is supported by Platform or not  
 				{  
 				System.out.println("not supported");  
